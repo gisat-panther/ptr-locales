@@ -1,12 +1,12 @@
 {
   "name": "@gisatcz/ptr-locales",
-  "version": "0.1.0-alpha",
-  "description": "Panther FE core",
+  "version": "1.2.0",
+  "description": "Panther FE locales",
   "keywords": [
     "panther",
     "gisat"
   ],
-  "homepage": "https://github.com/gisat/core",
+  "homepage": "https://github.com/gisat/ptr-locales",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
@@ -16,7 +16,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gisat/core"
+    "url": "https://github.com/gisat/ptr-locales"
   },
   "dependencies": {
     "i18next": "19.3.2",
