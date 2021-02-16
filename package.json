@@ -1,68 +1,68 @@
 {
-  "name": "@gisatcz/ptr-locales",
-  "version": "1.2.0",
-  "description": "Panther FE locales",
-  "keywords": [
-    "panther",
-    "gisat"
-  ],
-  "homepage": "https://github.com/gisat/ptr-locales",
-  "prettier": "@gisatcz/prettier-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "files": [
-    "dist",
-    "lib"
-  ],
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gisat/ptr-locales"
-  },
-  "dependencies": {
-    "i18next": "^19.8.7",
-    "lodash": "^4.17.20",
-    "react": "16.13.1",
-    "react-i18next": "9.0.10"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.12.16",
-    "@babel/core": "^7.12.16",
-    "@babel/plugin-proposal-class-properties": "^7.12.13",
-    "@babel/preset-env": "^7.12.16",
-    "@babel/preset-react": "^7.12.13",
-    "@gisatcz/prettier-config": "0.0.3",
-    "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "babel-plugin-lodash": "^3.3.4",
-    "cross-env": "^7.0.3",
-    "husky": "^5.0.9",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.39.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-filesize": "^9.1.0",
-    "shx": "^0.3.3"
-  },
-  "scripts": {
-    "clean": "rimraf dist",
-    "start": "run-s clean && run-p start:es start:cjs start:lib:es",
-    "start:lib:es": "cross-env BABEL_ENV=es babel --watch src -d lib --verbose",
-    "start:cjs": "cross-env NODE_ENV=cjs rollup -c -w",
-    "start:es": "cross-env NODE_ENV=es rollup -c -w",
-    "build": "run-s clean && run-p build:es build:cjs build:lib:es",
-    "build:es": "cross-env NODE_ENV=es rollup -c",
-    "build:cjs": "cross-env NODE_ENV=cjs rollup -c",
-    "build:lib:es": "npm-run-all build:babel:lib:es copy:locales",
-    "build:babel:lib:es": "cross-env BABEL_ENV=es babel src -d lib && npm run copy:locales",
-    "copy:locales": "shx cp -r src/locales lib/",
-    "format": "prettier --write ."
-  }
+	"name": "@gisatcz/ptr-locales",
+	"version": "1.2.0",
+	"description": "Panther FE locales",
+	"keywords": [
+		"panther",
+		"gisat"
+	],
+	"homepage": "https://github.com/gisat/ptr-locales",
+	"prettier": "@gisatcz/prettier-config",
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+	"main": "dist/index.js",
+	"module": "dist/index.es.js",
+	"files": [
+		"dist",
+		"lib"
+	],
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gisat/ptr-locales"
+	},
+	"dependencies": {
+		"i18next": "^19.8.7",
+		"lodash": "^4.17.20",
+		"react": "16.13.1",
+		"react-i18next": "9.0.10"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.16",
+		"@babel/core": "^7.12.16",
+		"@babel/plugin-proposal-class-properties": "^7.12.13",
+		"@babel/preset-env": "^7.12.16",
+		"@babel/preset-react": "^7.12.13",
+		"@gisatcz/prettier-config": "0.0.3",
+		"@rollup/plugin-commonjs": "^17.1.0",
+		"@rollup/plugin-json": "^4.1.0",
+		"babel-plugin-lodash": "^3.3.4",
+		"cross-env": "^7.0.3",
+		"husky": "^5.0.9",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.2.1",
+		"pretty-quick": "^3.1.0",
+		"rimraf": "^3.0.2",
+		"rollup": "^2.39.0",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-filesize": "^9.1.0",
+		"shx": "^0.3.3"
+	},
+	"scripts": {
+		"clean": "rimraf dist",
+		"start": "run-s clean && run-p start:es start:cjs start:lib:es",
+		"start:lib:es": "cross-env BABEL_ENV=es babel --watch src -d lib --verbose",
+		"start:cjs": "cross-env NODE_ENV=cjs rollup -c -w",
+		"start:es": "cross-env NODE_ENV=es rollup -c -w",
+		"build": "run-s clean && run-p build:es build:cjs build:lib:es",
+		"build:es": "cross-env NODE_ENV=es rollup -c",
+		"build:cjs": "cross-env NODE_ENV=cjs rollup -c",
+		"build:lib:es": "npm-run-all build:babel:lib:es copy:locales",
+		"build:babel:lib:es": "cross-env BABEL_ENV=es babel src -d lib && npm run copy:locales",
+		"copy:locales": "shx cp -r src/locales lib/",
+		"format": "prettier --write ."
+	}
 }
