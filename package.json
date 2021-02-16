@@ -19,27 +19,27 @@
     "url": "https://github.com/gisat/ptr-locales"
   },
   "dependencies": {
-    "i18next": "19.3.2",
-    "lodash": "4.17.15",
-    "react": "16.12.0",
-    "react-i18next": "9.0.9"
+    "i18next": "^19.8.7",
+    "lodash": "^4.17.20",
+    "react": "16.13.1",
+    "react-i18next": "9.0.10"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-json": "^4.0.2",
+    "@babel/cli": "^7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json": "^4.1.0",
     "babel-plugin-lodash": "^3.3.4",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
-    "rollup": "^2.0.4",
+    "rollup": "^2.39.0",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-filesize": "^6.2.1",
-    "shx": "^0.3.2"
+    "rollup-plugin-filesize": "^9.1.0",
+    "shx": "^0.3.3"
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -52,6 +52,7 @@
     "build:cjs": "cross-env NODE_ENV=cjs rollup -c",
     "build:lib:es": "npm-run-all build:babel:lib:es copy:locales",
     "build:babel:lib:es": "cross-env BABEL_ENV=es babel src -d lib && npm run copy:locales",
-    "copy:locales": "shx cp -r src/locales lib/"
+    "copy:locales": "shx cp -r src/locales lib/",
+    "format": "prettier --write ."
   }
 }
