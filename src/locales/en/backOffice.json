@@ -1,19 +1,19 @@
 {
 	"formLabels": {
-	  "allApps": "All applications",
-	  "application": "Application",
-	  "boundingBox": "Bounding box",
-	  "color": "Color",
-	  "configuration": "Configuration",
-	  "description": "Description",
-	  "geometry": "Geometry",
-	  "name": "Name",
-	  "nameInternal": "Internal name",
-	  "period": "Period",
-	  "state": "State",
-	  "type": "Type",
-	  "unit": "Unit",
-	  "valueType": "Value type"
+		"allApps": "All applications",
+		"application": "Application",
+		"boundingBox": "Bounding box",
+		"color": "Color",
+		"configuration": "Configuration",
+		"description": "Description",
+		"geometry": "Geometry",
+		"name": "Name",
+		"nameInternal": "Internal name",
+		"period": "Period",
+		"state": "State",
+		"type": "Type",
+		"unit": "Unit",
+		"valueType": "Value type"
 	},
 	"metadata": {
 		"names": {
