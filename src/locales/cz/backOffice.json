@@ -1,21 +1,21 @@
 {
 	"formLabels": {
-	  "allApps": "Všechny aplikace",
-	  "application": "Aplikace",
-	  "boundingBox": "Bounding box",
-	  "color": "Barva",
-	  "configuration": "Konfigurace",
-	  "description": "Popis",
-	  "geometry": "Geometrie",
-	  "name": "Název",
-	  "nameInternal": "Interní název",
-	  "period": "Perioda",
-	  "state": "Stav",
-	  "type": "Typ",
-	  "unit": "Jednotka",
-	  "valueType": "Typ hodnoty"
+		"allApps": "Všechny aplikace",
+		"application": "Aplikace",
+		"boundingBox": "Bounding box",
+		"color": "Barva",
+		"configuration": "Konfigurace",
+		"description": "Popis",
+		"geometry": "Geometrie",
+		"name": "Název",
+		"nameInternal": "Interní název",
+		"period": "Perioda",
+		"state": "Stav",
+		"type": "Typ",
+		"unit": "Jednotka",
+		"valueType": "Typ hodnoty"
 	},
-  "metadata": {
+	"metadata": {
 		"names": {
 			"attribute": "Atribut",
 			"attribute_plural": "Atributy",
