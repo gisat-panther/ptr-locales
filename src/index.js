@@ -1,11 +1,12 @@
 import localesUtils from './utils';
 import i18n from './i18n';
-import {withNamespaces} from 'react-i18next';
+import {withTranslation, initReactI18next} from 'react-i18next';
 
-export {i18n, localesUtils, withNamespaces};
+export {i18n, localesUtils, withTranslation as withNamespaces, initReactI18next};
 
 export default {
 	i18n,
 	localesUtils,
-	withNamespaces,
+	withNamespaces: withTranslation,
+	initReactI18next,
 };
