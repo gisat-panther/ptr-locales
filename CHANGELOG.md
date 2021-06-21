@@ -1,3 +1,15 @@
+# v1.3.0 (Mon Jun 21 2021)
+
+#### 🚀 Enhancement
+
+- Update packages [#8](https://github.com/gisat-panther/ptr-locales/pull/8) ([@vdubr](https://github.com/vdubr))
+
+#### Authors: 1
+
+- Vojtěch Dubrovský ([@vdubr](https://github.com/vdubr))
+
+---
+
 # v1.2.2 (Wed Feb 17 2021)
 
 #### 🐾 Patch
