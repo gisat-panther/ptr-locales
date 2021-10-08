@@ -10,7 +10,13 @@ const lodashExternal = ['lodash/forIn'];
 
 export default {
 	input: 'src/index.js',
-	external: ['react', 'i18next', 'react-i18next', /@babel\/runtime/, ...lodashExternal],
+	external: [
+		'react',
+		'i18next',
+		'react-i18next',
+		/@babel\/runtime/,
+		...lodashExternal,
+	],
 	output: {
 		file: {
 			es: pkg.module,
