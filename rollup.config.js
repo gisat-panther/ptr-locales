@@ -10,7 +10,7 @@ const lodashExternal = ['lodash/forIn'];
 
 export default {
 	input: 'src/index.js',
-	external: ['react', 'i18next', 'react-i18next', ...lodashExternal],
+	external: ['react', 'i18next', 'react-i18next', /@babel\/runtime/, ...lodashExternal],
 	output: {
 		file: {
 			es: pkg.module,
@@ -26,6 +26,7 @@ export default {
 	plugins: [
 		babel({
 			plugins: ['lodash'],
+			babelHelpers: 'runtime',
 		}),
 		commonjs({
 			include: 'node_modules/**',
