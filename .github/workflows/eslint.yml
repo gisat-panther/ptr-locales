@@ -1,0 +1,23 @@
+name: Code Style
+
+on:
+  - pull_request
+
+jobs:
+  code_style:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # Ensure that git uses your token with write access to the repo
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
+      - name: Install
+        run: npm i prettier @gisatcz/prettier-config eslint-config-prettier eslint eslint-plugin-prettier--no-save
+
+      - name: Fix Code Style
+        run: npm run lint
