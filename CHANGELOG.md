@@ -1,3 +1,15 @@
+# v1.5.0 (Fri Jun 24 2022)
+
+#### 🚀 Enhancement
+
+- :sparkles: [#16](https://github.com/gisat-panther/ptr-locales/pull/16) ([@vdubr](https://github.com/vdubr))
+
+#### Authors: 1
+
+- Vojtěch Dubrovský ([@vdubr](https://github.com/vdubr))
+
+---
+
 # v1.4.0 (Fri Oct 08 2021)
 
 #### 🚀 Enhancement
